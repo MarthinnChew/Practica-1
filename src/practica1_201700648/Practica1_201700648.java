@@ -14,6 +14,7 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
 
     public static void main(String[] args) {  
         int opcion = 0;
+        int contador = 1;
         int matrizBodegas[][]= new int[5][6];  // matriz[filas j]x[columnas i] 
         for(int j=0; j < 5; j++){               //llena de izquierda a derecha de fila en fila
            for(int i=0; i < 6; i++){
@@ -55,8 +56,11 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
               matrizBodegas[3][5] = 20;//PRODUCTO 4 P4_B6
               matrizBodegas[4][5] = 20;//PRODUCTO 5 P5_B6
 
-   
+             
+                contador++; 
+            System.out.print("["+"  "+ matrizBodegas[j][i]+"   "+"]");
                                             }//FOR MATRIZ
+            System.out.println("");                                
                                      }//FOR MATRIZ
         Scanner entrada = new Scanner(System.in);
         
@@ -85,6 +89,14 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                 System.out.println("3. Regresar");
                 opcion = entrada.nextInt();
                 
+                    switch(opcion){
+                        case 1:
+                             
+                            break;
+                        case 2:
+                            break;
+                    }
+                
                 
                 break;//case 1 principal
             case 2:// MENU TRASLADOS DE BODEGA
@@ -93,6 +105,13 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                 System.out.println("3. Regresar");
                 opcion = entrada.nextInt();
                 
+                    switch(opcion){
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                    }
+                
                 break;//case 2 principal
             case 3:// MENU REBASTECIMIENTO
                 System.out.println("1. Rebastecer Aumatizado");
@@ -100,12 +119,26 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                 System.out.println("3. Regresar");
                 opcion = entrada.nextInt();
                 
+                     switch(opcion){
+                            case 1:
+                                break;
+                            case 2:
+                                break;               
+                     }
+                     
                 break;//case 3 principal
             case 4:// MENU SALIDA DE PRODUCTOS
                 System.out.println("1. Realizar pedido");
                 System.out.println("2. Regresar");
                 opcion = entrada.nextInt();
                 
+                    switch(opcion){
+                            case 1:
+                                break;
+                            case 2:
+                                break;                
+                    }
+                    
                 break;//case 4 principal
             case 5:// NENU KARDEX
                 break;//case 5 principal
@@ -114,7 +147,8 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
             case 7:// MENU MOSTRAR BODEGA
                 break;//case 7 principal
             case 8:// SALIR
-            default: Numero =0;
+                System.out.println("Finalizado.");
+            System.exit(0);
                 break;//case 8 principal    
             
         }//switch principal
