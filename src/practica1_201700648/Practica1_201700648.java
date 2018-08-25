@@ -117,7 +117,7 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                                                                   contador++;
                                                                         if(contador> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
 
-                                                                           matrizBodega1[i][j+1]=0;
+                                                                           matrizBodega1[i][j]=0;
                                                                            contador++;
                                                                                                     }                                   
                                                           System.out.print("   "+matrizBodega1[i][j] );
@@ -643,10 +643,524 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                 opcion = entrada.nextInt();
                 
                      switch(opcion){
-                            case 1:
+                            case 1://1. Rebastecimiento Automatizado
+                                                        int num_bodega = 0;
+                                                        System.out.println("Ingrese el numero de bodega:");
+                                                        num_bodega = entrada.nextInt();
+                                                            switch(num_bodega){
+                                                                case 1:
+
+                                                                    int cuentaf1 = 0;
+                                                           for(int i=0; i <5 ; i++){               
+                                                            for(int j=0; j <20; j++){
+
+                                                                if(matrizBodega1[0][j]==1){
+                                                                     cuentaf1++;
+                                                                                     }   
+
+                                                                if(cuentaf1<=4){
+                                                                matrizBodega1[0][j]= 1; //vuelve 1 el espacio vacio
+
+                                                                 }
+                                                            }}
+
+                                                           int cuentaf2 = 0;
+                                                           for(int i=0; i <5 ; i++){               
+                                                            for(int j=0; j <20; j++){
+
+                                                                if(matrizBodega1[1][j]==1){
+                                                                     cuentaf2++;
+                                                                                     }   
+
+                                                                if(cuentaf2<=4){
+                                                                matrizBodega1[1][j]= 1; //vuelve 1 el espacio vacio
+
+                                                                 }
+                                                            }}
+
+                                                           int cuentaf3 = 0;
+                                                           for(int i=0; i <5 ; i++){               
+                                                            for(int j=0; j <20; j++){
+
+                                                                if(matrizBodega1[2][j]==1){
+                                                                     cuentaf3++;
+                                                                                     }   
+
+                                                                if(cuentaf3<=4){
+                                                                matrizBodega1[2][j]= 1; //vuelve 1 el espacio vacio
+
+                                                                 }
+                                                            }}
+
+                                                           int cuentaf4 = 0;
+                                                           for(int i=0; i <5 ; i++){               
+                                                            for(int j=0; j <20; j++){
+
+                                                                if(matrizBodega1[3][j]==1){
+                                                                     cuentaf4++;
+                                                                                     }   
+
+                                                                if(cuentaf4<=4){
+                                                                matrizBodega1[3][j]= 1; //vuelve 1 el espacio vacio
+
+                                                                 }
+                                                            }}
+
+                                                           int cuentaf5 = 0;
+                                                           for(int i=0; i <5 ; i++){               
+                                                            for(int j=0; j <20; j++){
+
+                                                                if(matrizBodega1[4][j]==1){
+                                                                     cuentaf5++;
+                                                                                     }   
+
+                                                                if(cuentaf5<=4){
+                                                                matrizBodega1[4][j]= 1; //vuelve 1 el espacio vacio
+
+                                                                 }
+                                                            }}
+                                            break;
+                                case 2:
+                                                            int cuenta2f1 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega2[0][j]==1){
+                                                             cuenta2f1++;
+                                                                             }   
+
+                                                        if(cuenta2f1<=4){
+                                                        matrizBodega2[0][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta2f2 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega2[1][j]==1){
+                                                             cuenta2f2++;
+                                                                             }   
+
+                                                        if(cuenta2f2<=4){
+                                                        matrizBodega2[1][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta2f3 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega2[2][j]==1){
+                                                             cuenta2f3++;
+                                                                             }   
+
+                                                        if(cuenta2f3<=4){
+                                                        matrizBodega2[2][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta2f4 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega2[3][j]==1){
+                                                             cuenta2f4++;
+                                                                             }   
+
+                                                        if(cuenta2f4<=4){
+                                                        matrizBodega2[3][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta2f5 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega2[4][j]==1){
+                                                             cuenta2f5++;
+                                                                             }   
+
+                                                        if(cuenta2f5<=4){
+                                                        matrizBodega2[4][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+                                            
+                                            break;
+                                        case 3:
+                                            
+                                                 int cuenta3f1 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega3[0][j]==1){
+                                                             cuenta3f1++;
+                                                                             }   
+
+                                                        if(cuenta3f1<=4){
+                                                        matrizBodega3[0][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta3f2 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega3[1][j]==1){
+                                                             cuenta3f2++;
+                                                                             }   
+
+                                                        if(cuenta3f2<=4){
+                                                        matrizBodega3[1][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta3f3 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega3[2][j]==1){
+                                                             cuenta3f3++;
+                                                                             }   
+
+                                                        if(cuenta3f3<=4){
+                                                        matrizBodega3[2][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta3f4 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega3[3][j]==1){
+                                                             cuenta3f4++;
+                                                                             }   
+
+                                                        if(cuenta3f4<=4){
+                                                        matrizBodega3[3][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta3f5 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega3[4][j]==1){
+                                                             cuenta3f5++;
+                                                                             }   
+
+                                                        if(cuenta3f5<=4){
+                                                        matrizBodega3[4][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+                                            
+                                            break;
+                                        case 4:
+                                            
+                                                            int cuenta4f1 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega4[0][j]==1){
+                                                             cuenta4f1++;
+                                                                             }   
+
+                                                        if(cuenta4f1<=4){
+                                                        matrizBodega4[0][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta4f2 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega4[1][j]==1){
+                                                             cuenta4f2++;
+                                                                             }   
+
+                                                        if(cuenta4f2<=4){
+                                                        matrizBodega4[1][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta4f3 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega4[2][j]==1){
+                                                             cuenta4f3++;
+                                                                             }   
+
+                                                        if(cuenta4f3<=4){
+                                                        matrizBodega4[2][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta4f4 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega4[3][j]==1){
+                                                             cuenta4f4++;
+                                                                             }   
+
+                                                        if(cuenta4f4<=4){
+                                                        matrizBodega4[3][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta4f5 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega4[4][j]==1){
+                                                             cuenta4f5++;
+                                                                             }   
+
+                                                        if(cuenta4f5<=4){
+                                                        matrizBodega4[4][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}                                            
+                                            
+                                            break;
+                                        case 5:
+                                            
+                                             int cuenta5f1 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega5[0][j]==1){
+                                                             cuenta5f1++;
+                                                                             }   
+
+                                                        if(cuenta5f1<=4){
+                                                        matrizBodega5[0][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta5f2 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega5[1][j]==1){
+                                                             cuenta5f2++;
+                                                                             }   
+
+                                                        if(cuenta5f2<=4){
+                                                        matrizBodega5[1][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta5f3 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega5[2][j]==1){
+                                                             cuenta5f3++;
+                                                                             }   
+
+                                                        if(cuenta5f3<=4){
+                                                        matrizBodega5[2][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta5f4 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega5[3][j]==1){
+                                                             cuenta5f4++;
+                                                                             }   
+
+                                                        if(cuenta5f4<=4){
+                                                        matrizBodega5[3][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta5f5 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega5[4][j]==1){
+                                                             cuenta5f5++;
+                                                                             }   
+
+                                                        if(cuenta5f5<=4){
+                                                        matrizBodega5[4][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+                                            
+                                            break;
+                                        case 6:
+                                            
+                                            int cuenta6f1 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega6[0][j]==1){
+                                                             cuenta6f1++;
+                                                                             }   
+
+                                                        if(cuenta6f1<=4){
+                                                        matrizBodega6[0][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta6f2 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega6[1][j]==1){
+                                                             cuenta6f2++;
+                                                                             }   
+
+                                                        if(cuenta6f2<=4){
+                                                        matrizBodega6[1][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta6f3 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega6[2][j]==1){
+                                                             cuenta6f3++;
+                                                                             }   
+
+                                                        if(cuenta6f3<=4){
+                                                        matrizBodega6[2][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta6f4 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega6[3][j]==1){
+                                                             cuenta6f4++;
+                                                                             }   
+
+                                                        if(cuenta6f4<=4){
+                                                        matrizBodega6[3][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+
+                                                   int cuenta6f5 = 0;
+                                                   for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+
+                                                        if(matrizBodega6[4][j]==1){
+                                                             cuenta6f5++;
+                                                                             }   
+
+                                                        if(cuenta6f5<=4){
+                                                        matrizBodega6[4][j]= 1; //vuelve 1 el espacio vacio
+
+                                                         }
+                                                    }}
+                                            
+                                            break;
+                                            
+                                    }
                                 break;
-                            case 2:
-                                break;               
+                            case 2: // 2. Rebastecer manual
+                                int n_bodega=0, n_producto=0, n_ingreso = 0;
+                                System.out.println("Ingrese el numero de bodega(1- 6):");
+                                n_bodega = entrada.nextInt();
+                                System.out.println("Ingrese el numero de producto(1-5):");
+                                System.out.print("P");
+                                n_producto = entrada.nextInt();
+                                System.out.println("Ingrese el numero de existencia(1 - 20):");
+                                n_ingreso = entrada.nextInt();
+                                        switch(n_bodega){
+                                            case 1:
+                                                if(n_producto<=5 && n_ingreso<=20)
+                                                for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+                                                        if(n_ingreso>0)
+                                                        matrizBodega1[n_producto-1][j]= 1;
+                                                       n_ingreso--;
+                                                    }}
+                                                                     
+                                                break;
+                                            case 2:
+                                                if(n_producto<=5 && n_ingreso<=20)
+                                                for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+                                                        if(n_ingreso>0)
+                                                        matrizBodega2[n_producto-1][j]= 1;
+                                                       n_ingreso--;
+                                                    }}
+                                                break;
+                                            case 3:
+                                                if(n_producto<=5 && n_ingreso<=20)
+                                                for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+                                                        if(n_ingreso>0)
+                                                        matrizBodega3[n_producto-1][j]= 1;
+                                                       n_ingreso--;
+                                                    }}
+                                                break;
+                                            case 4:
+                                                if(n_producto<=5 && n_ingreso<=20)
+                                                for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+                                                        if(n_ingreso>0)
+                                                        matrizBodega4[n_producto-1][j]= 1;
+                                                       n_ingreso--;
+                                                    }}
+                                                break;
+                                                
+                                            case 5:
+                                                if(n_producto<=5 && n_ingreso<=20)
+                                                for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+                                                        if(n_ingreso>0)
+                                                        matrizBodega5[n_producto-1][j]= 1;
+                                                       n_ingreso--;
+                                                    }}
+                                                break;
+                                            case 6:
+                                                if(n_producto<=5 && n_ingreso<=20)
+                                                for(int i=0; i <5 ; i++){               
+                                                    for(int j=0; j <20; j++){
+                                                        if(n_ingreso>0)
+                                                        matrizBodega6[n_producto-1][j]= 1;
+                                                       n_ingreso--;
+                                                    }}
+                                                break;
+                                            case 7:System.out.println("Error Opcion incorecta");
+                                            default:
+                                        }
+                                
+                                break;// 2. Rebastecer manual    
+                            case 4:
+                            default:System.out.println("Error Opcion incorecta(1-3)");
+                            break;
                      }
                      
                 break;//case 3 principal
@@ -656,7 +1170,10 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                 opcion = entrada.nextInt();
                 
                     switch(opcion){
+                        
+                            
                             case 1:
+                                
                                 break;
                             case 2:
                                 break;                
