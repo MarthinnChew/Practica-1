@@ -5,7 +5,8 @@
  */
 package practica1_201700648;
 import java.util.Scanner;
-
+import java.util.Random;
+import java.security.SecureRandom;
 /**
  *
  * @author Marthinn Chew
@@ -92,12 +93,582 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                 System.out.println("2. Limpiar Bodegas");
                 System.out.println("3. Regresar");
                 opcion = entrada.nextInt();
-                while (Numero==0) {////////////////
+                ////////////////
                     switch(opcion){
                         case 1:
                             int num_bodega;
                             int num_producto;
-                            
+                             
+                             System.out.println("Ingrese el numero de bodega(1 a 6)");
+                               num_bodega = entrada.nextInt();
+                             System.out.println("Ingrese el numero productos a ingresar( 15-75 productos)");
+                               num_producto = entrada.nextInt();
+                               
+                                            switch(num_bodega){
+                                                case 1:
+                                                    
+                                                                    int contador = 1;
+                                                                    int asignado = 1;//da valor 1 a la casilla
+                                                                       if(num_producto>14 && num_producto<76){
+                                                              for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                              for(int j=0; j <20; j++){
+
+                                                                  matrizBodega1[i][j]=asignado;
+                                                                  contador++;
+                                                                        if(contador> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                           matrizBodega1[i][j+1]=0;
+                                                                           contador++;
+                                                                                                    }                                   
+                                                          System.out.print("   "+matrizBodega1[i][j] );
+                                                                                      }                       
+                                                                   System.out.println("");
+                                                                       }
+
+                                                                     }//if
+
+                                                                      break;
+                                                case 2:
+                                                   
+                                                                  int contador2 = 1;
+                                                                  int asignado2 = 1;//da valor 1 a la casilla
+                                                                     if(num_producto>14 && num_producto<76){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega2[i][j]=asignado2;
+                                                                contador2++;
+                                                                      if(contador2> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega2[i][j]=0;
+                                                                         contador2++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega2[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if
+                                                     
+                                                    break;
+                                                case 3:
+                                                    
+                                                   
+                                                                  int contador3 = 1;
+                                                                  int asignado3 = 1;//da valor 1 a la casilla
+                                                                     if(num_producto>14 && num_producto<76){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega3[i][j]=asignado3;
+                                                                contador3++;
+                                                                      if(contador3> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega3[i][j]=0;
+                                                                         contador3++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega3[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if
+                                                                     
+                                                    break;
+                                                case 4:
+                                                    
+                                                                  int contador4 = 1;
+                                                                  int asignado4 = 1;//da valor 1 a la casilla
+                                                                     if(num_producto>14 && num_producto<76){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega4[i][j]=asignado4;
+                                                                contador4++;
+                                                                      if(contador4> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega4[i][j]=0;
+                                                                         contador4++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega4[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if                                                    
+                                                    break;
+                                                case 5:
+                                                    
+                                                                  int contador5 = 1;
+                                                                  int asignado5 = 1;//da valor 1 a la casilla
+                                                                     if(num_producto>14 && num_producto<76){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega5[i][j]=asignado5;
+                                                                contador5++;
+                                                                      if(contador5> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega5[i][j]=0;
+                                                                         contador5++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega5[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if                                                    
+                                                    break;
+                                                case 6:
+                                                    
+                                                                  int contador6 = 1;
+                                                                  int asignado6 = 1;//da valor 1 a la casilla
+                                                                     if(num_producto>14 && num_producto<76){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega6[i][j]=asignado6;
+                                                                contador6++;
+                                                                      if(contador6> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega6[i][j]=0;
+                                                                         contador6++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega6[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if
+                                                                     
+                                                    break;
+                                                 case 7:
+                                                 default: System.out.println("Error: Bodega inexistente");
+                                                    break;
+                                                    
+                                            }
+                             break;//case 1
+                        case 2: // sub menu 2.limpiar bodegas
+                        
+                              System.out.println("Ingrese el numero de bodega a limpiar(1 - 6)");
+                               num_bodega = entrada.nextInt();
+                               switch(num_bodega){
+                                   case 1:
+                                       
+                                                                                   
+                                                                    int contador = 1;
+                                                                    int asignado = 0;//da valor 1 a la casilla
+                                                                       if(num_bodega>0){
+                                                              for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                              for(int j=0; j <20; j++){
+
+                                                                  matrizBodega1[i][j]=asignado;
+                                                                  contador++;
+                                                                        if(contador> num_bodega){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                           matrizBodega1[i][j]=0;
+                                                                           contador++;
+                                                                                                    }                                   
+                                                          System.out.print("   "+matrizBodega1[i][j] );
+                                                                                      }                       
+                                                                   System.out.println("");
+                                                                       }
+
+                                                                     }//if
+                                       break;
+                                       
+                                       case 2:
+                                                   
+                                                                  int contador2 = 1;
+                                                                  int asignado2 = 0;//da valor 1 a la casilla
+                                                                     if(num_bodega>0){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega2[i][j]=asignado2;
+                                                                contador2++;
+                                                                      if(contador2> num_bodega){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega2[i][j]=0;
+                                                                         contador2++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega2[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if
+                                                     
+                                                    break;
+                                       case 3:
+                                                    
+                                                   
+                                                                  int contador3 = 1;
+                                                                  int asignado3 = 0;//da valor 1 a la casilla
+                                                                     if(num_bodega>0){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega3[i][j]=asignado3;
+                                                                contador3++;
+                                                                      if(contador3> num_bodega){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega3[i][j]=0;
+                                                                         contador3++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega3[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if
+                                                                     
+                                                    break;
+                                           case 4:
+                                                    
+                                                                  int contador4 = 1;
+                                                                  int asignado4 = 0;//da valor 1 a la casilla
+                                                                     if(num_bodega>0){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega4[i][j]=asignado4;
+                                                                contador4++;
+                                                                      if(contador4> num_bodega){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega4[i][j]=0;
+                                                                         contador4++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega4[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if                                                    
+                                                    break;
+                                                case 5:
+                                                    
+                                                                  int contador5 = 1;
+                                                                  int asignado5 = 0;//da valor 1 a la casilla
+                                                                     if(num_bodega>0){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega5[i][j]=asignado5;
+                                                                contador5++;
+                                                                      if(contador5> num_bodega){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega5[i][j]=0;
+                                                                         contador5++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega5[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if                                                    
+                                                    break;
+                                                case 6:
+                                                    
+                                                                  int contador6 = 1;
+                                                                  int asignado6 = 0;//da valor 1 a la casilla
+                                                                     if(num_bodega>0){
+                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
+                                                            for(int j=0; j <20; j++){
+
+                                                                matrizBodega6[i][j]=asignado6;
+                                                                contador6++;
+                                                                      if(contador6> num_bodega){ //si es mayor al numero de ingresos llena de ceros
+
+                                                                         matrizBodega6[i][j]=0;
+                                                                         contador6++;
+                                                                                                  }                                   
+                                                        System.out.print("   "+matrizBodega6[i][j] );
+                                                                                    }                       
+                                                                 System.out.println("");
+                                                                     }
+
+                                                                   }//if
+                                                                     
+                                                    break;
+                                                case 7:
+                                                default:System.out.println("Error: Bodega inexistente");
+                                                    break;
+                               }
+                            break;
+                    }//switch primer menu
+                
+                
+                break;//case 1 principal
+                ////segundo while
+                
+            case 2:// MENU TRASLADOS DE BODEGA
+                System.out.println("1. Verificar posibles traslados");
+                System.out.println("2. Realizar traslado");
+                System.out.println("3. Regresar");
+                opcion = entrada.nextInt();
+                
+                    switch(opcion){
+                            case 1: //sub menu: 1. Verificar posibles traslados
+                                System.out.println("Espacios disponibles");
+////////////////////////////////////////////////////////////////////////////////////////////////////////// bodega 1                              
+                                int espaciosvacios=0;
+                                int cuenta1 = 0;//cuenta espacios llenos                          
+                                     for(int i=0; i < 5; i++){               
+                                     for(int j=0; j <20; j++){
+                                         if(matrizBodega1[i][j]==1){
+                                             cuenta1++;
+                                                             }          
+                                         }
+                                     }
+                                     espaciosvacios =-(cuenta1 - 100);
+                                     System.out.println("Bodega1:" + espaciosvacios );                        
+////////////////////////////////////////////////////////////////////////////////////////////////////////// bodega 2    
+                                     int espaciosvacios2=0;
+                                     int cuenta2 = 0;//cuenta espacios llenos
+                                
+                                     for(int i=0; i < 5; i++){               
+                                     for(int j=0; j <20; j++){
+                                         if(matrizBodega2[i][j]==1){
+                                             cuenta2++;
+                                                             }          
+                                         }
+                                     }
+                                     
+                                     espaciosvacios2 =-(cuenta2 - 100);
+                                     System.out.println("Bodega2:" + espaciosvacios2 );                        
+////////////////////////////////////////////////////////////////////////////////////////////////////////// bodega 3                                   
+                                int espaciosvacios3=0;
+                                int cuenta3 = 0;//cuenta espacios llenos                          
+                                     for(int i=0; i < 5; i++){               
+                                     for(int j=0; j <20; j++){
+                                         if(matrizBodega3[i][j]==1){
+                                             cuenta3++;
+                                                             }          
+                                         }
+                                     }
+                                     espaciosvacios3 =-(cuenta3 - 100);
+                                     System.out.println("Bodega3:" + espaciosvacios3 );                        
+////////////////////////////////////////////////////////////////////////////////////////////////////////// bodega 4    
+                                     int espaciosvacios4=0;
+                                     int cuenta4 = 0;//cuenta espacios llenos
+                                
+                                     for(int i=0; i < 5; i++){               
+                                     for(int j=0; j <20; j++){
+                                         if(matrizBodega4[i][j]==1){
+                                             cuenta4++;
+                                                             }          
+                                         }
+                                     }
+                                     
+                                     espaciosvacios4 =-(cuenta4 - 100);
+                                     System.out.println("Bodega4:" + espaciosvacios4 );   
+////////////////////////////////////////////////////////////////////////////////////////////////////////// bodega 5    
+                                     int espaciosvacios5=0;
+                                     int cuenta5 = 0;//cuenta espacios llenos
+                                
+                                     for(int i=0; i < 5; i++){               
+                                     for(int j=0; j <20; j++){
+                                         if(matrizBodega5[i][j]==1){
+                                             cuenta5++;
+                                                             }          
+                                         }
+                                     }
+                                     
+                                     espaciosvacios5 =-(cuenta5 - 100);
+                                     System.out.println("Bodega5:" + espaciosvacios5 );  
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////// bodega 6   
+                                     int espaciosvacios6=0;
+                                     int cuenta6 = 0;//cuenta espacios llenos
+                                
+                                     for(int i=0; i < 5; i++){               
+                                     for(int j=0; j <20; j++){
+                                         if(matrizBodega6[i][j]==1){
+                                             cuenta6++;
+                                                             }          
+                                         }
+                                     }
+                                     
+                                     espaciosvacios6 =-(cuenta6 - 100);
+                                     System.out.println("Bodega6:" + espaciosvacios6 ); 
+                                     
+                                break;
+                            case 2://submenu: 2. Realizar traslado
+                                int s_bodega=0, s_producto=0, s_espacio=0;
+                                int e_bodega=0, e_producto=0, e_espacio=0;
+                                System.out.println("Salida - Ingrese el numero de bodega:"); 
+                                s_bodega = entrada.nextInt();
+                                System.out.println("Salida - Ingrese Producto(P1,P2,P3,P4,P5):");
+                                System.out.print("P");
+                                s_producto = entrada.nextInt();
+                                System.out.println("Salida - Ingrese espacio(E + 1-20):"); 
+                                System.out.print("E");
+                                s_espacio = entrada.nextInt();
+                                if(matrizBodega1[s_producto-1][s_espacio-1]== 1){//////////////////
+                                    switch(s_bodega){
+                                        case 1:
+                                    
+                                    for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        if(matrizBodega1[s_producto-1][s_espacio-1]== 1){
+                                        matrizBodega1[s_producto-1][s_espacio-1]= 0; //vuelve 0 el espacio lleno
+                                        }
+                                         }
+                                    }
+                                    break;
+                                        case 2:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        
+                                        matrizBodega2[s_producto-1][s_espacio-1]= 0; //vuelve 0 el espacio lleno
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 3:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        
+                                        matrizBodega3[s_producto-1][s_espacio-1]= 0; //vuelve 0 el espacio lleno
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 4:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                     
+                                        matrizBodega4[s_producto-1][s_espacio-1]= 0; //vuelve 0 el espacio lleno
+                                       
+                                         }
+                                    }
+                                        break;
+                                        case 5:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                       
+                                        matrizBodega5[s_producto-1][s_espacio-1]= 0; //vuelve 0 el espacio lleno
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 6:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        
+                                        matrizBodega6[s_producto-1][s_espacio-1]= 0; //vuelve 0 el espacio lleno
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 7:
+                                        default:System.out.println("Error: Bodega inexistente");
+                                        break;
+                                }
+                                
+                                
+                                System.out.println("Entrada - Ingrese el numero de bodega:"); 
+                                e_bodega = entrada.nextInt();
+                                System.out.println("Entrada - Ingrese Producto(P1,P2,P3,P4,P5):");
+                                System.out.print("P");
+                                e_producto = entrada.nextInt();
+                                System.out.println("Entrada - Ingrese espacio(E + 1-20):"); 
+                                System.out.print("E");
+                                e_espacio = entrada.nextInt();
+                                
+                                
+                              
+                                switch(e_bodega){
+                                    
+                                    case 1:
+                                    
+                                    for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        matrizBodega1[s_producto-1][e_espacio-1]= 1; //vuelve 1 el espacio vacio
+                                        
+                                         }
+                                    }
+                                    break;
+                                        case 2:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        matrizBodega2[s_producto-1][e_espacio-1]= 1; //vuelve 1 el espacio vacio
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 3:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        matrizBodega3[s_producto-1][e_espacio-1]= 1; //vuelve 1 el espacio vacio
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 4:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        matrizBodega4[s_producto-1][e_espacio-1]= 1; //vuelve 1 el espacio vacio
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 5:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        matrizBodega5[s_producto-1][e_espacio-1]= 1; //vuelve 1 el espacio vacio
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 6:
+                                            for(int i=0; i < 5; i++){               
+                                    for(int j=0; j <20; j++){
+                                        matrizBodega6[s_producto-1][e_espacio-1]= 1; //vuelve 1 el espacio vacio
+                                        
+                                         }
+                                    }
+                                        break;
+                                        case 7:
+                                        default:System.out.println("Error: Bodega inexistente");
+                                        }break;
+                                }else{System.out.println("Error: entrada - espacio vacío");}
+                    }
+        
+                break;//case 2 principal
+            case 3:// MENU REBASTECIMIENTO
+                System.out.println("1. Rebastecer Aumatizado");
+                System.out.println("2. Rebastecer manual");
+                System.out.println("3. Regresar");
+                opcion = entrada.nextInt();
+                
+                     switch(opcion){
+                            case 1:
+                                break;
+                            case 2:
+                                break;               
+                     }
+                     
+                break;//case 3 principal
+            case 4:// MENU SALIDA DE PRODUCTOS
+                System.out.println("1. Realizar pedido");
+                System.out.println("2. Regresar");
+                opcion = entrada.nextInt();
+                
+                    switch(opcion){
+                            case 1:
+                                break;
+                            case 2:
+                                break;                
+                    }
+                    
+                break;//case 4 principal
+            case 5:// NENU KARDEX
+                break;//case 5 principal
+            case 6:// MENU REPORTES
+                break;//case 6 principal
+            case 7:// MENU MOSTRAR BODEGA
+                
                             System.out.println("Estado actual de la bodega 1:");
                             System.out.println("-E1 -E2 -E3 -E4 -E5 -E6 -E7 -E8 -E9 -E10-E11-E12-E13-E14-E15-E16-E17-E18-E19-E20");
                             for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
@@ -155,216 +726,17 @@ public class Practica1_201700648 { //https://github.com/MarthinnChew/Practica-1
                                             }
                             System.out.println();
                             }
-                             
-                             
-                             System.out.println("Ingrese el numero de bodega");
-                               num_bodega = entrada.nextInt();
-                             System.out.println("Ingrese el numero productos a ingresar( 15-75 productos)");
-                               num_producto = entrada.nextInt();
-                               
-                                            switch(num_bodega){
-                                                case 1:
-                                                    
-                                                                    int contador = 1;
-                                                                    int asignado = 1;//da valor 1 a la casilla
-                                                                       if(num_producto>14){
-                                                              for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
-                                                              for(int j=0; j <20; j++){
-
-                                                                  matrizBodega1[i][j]=asignado;
-                                                                  contador++;
-                                                                        if(contador> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
-
-                                                                           matrizBodega1[i][j]=0;
-                                                                           contador++;
-                                                                                                    }                                   
-                                                          System.out.print("   "+matrizBodega1[i][j] );
-                                                                                      }                       
-                                                                   System.out.println("");
-                                                                       }
-
-                                                                     }//if
-
-                                                                      break;
-                                                case 2:
-                                                   
-                                                                  int contador2 = 1;
-                                                                  int asignado2 = 1;//da valor 1 a la casilla
-                                                                     if(num_producto>14){
-                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
-                                                            for(int j=0; j <20; j++){
-
-                                                                matrizBodega2[i][j]=asignado2;
-                                                                contador2++;
-                                                                      if(contador2> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
-
-                                                                         matrizBodega2[i][j]=0;
-                                                                         contador2++;
-                                                                                                  }                                   
-                                                        System.out.print("   "+matrizBodega2[i][j] );
-                                                                                    }                       
-                                                                 System.out.println("");
-                                                                     }
-
-                                                                   }//if
-                                                     
-                                                    break;
-                                                case 3:
-                                                    
-                                                   
-                                                                  int contador3 = 1;
-                                                                  int asignado3 = 1;//da valor 1 a la casilla
-                                                                     if(num_producto>14){
-                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
-                                                            for(int j=0; j <20; j++){
-
-                                                                matrizBodega3[i][j]=asignado3;
-                                                                contador3++;
-                                                                      if(contador3> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
-
-                                                                         matrizBodega3[i][j]=0;
-                                                                         contador3++;
-                                                                                                  }                                   
-                                                        System.out.print("   "+matrizBodega3[i][j] );
-                                                                                    }                       
-                                                                 System.out.println("");
-                                                                     }
-
-                                                                   }//if
-                                                                     
-                                                    break;
-                                                case 4:
-                                                    
-                                                                  int contador4 = 1;
-                                                                  int asignado4 = 1;//da valor 1 a la casilla
-                                                                     if(num_producto>14){
-                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
-                                                            for(int j=0; j <20; j++){
-
-                                                                matrizBodega4[i][j]=asignado4;
-                                                                contador4++;
-                                                                      if(contador4> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
-
-                                                                         matrizBodega4[i][j]=0;
-                                                                         contador4++;
-                                                                                                  }                                   
-                                                        System.out.print("   "+matrizBodega4[i][j] );
-                                                                                    }                       
-                                                                 System.out.println("");
-                                                                     }
-
-                                                                   }//if                                                    
-                                                    break;
-                                                case 5:
-                                                    
-                                                                  int contador5 = 1;
-                                                                  int asignado5 = 1;//da valor 1 a la casilla
-                                                                     if(num_producto>14){
-                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
-                                                            for(int j=0; j <20; j++){
-
-                                                                matrizBodega5[i][j]=asignado5;
-                                                                contador5++;
-                                                                      if(contador5> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
-
-                                                                         matrizBodega5[i][j]=0;
-                                                                         contador5++;
-                                                                                                  }                                   
-                                                        System.out.print("   "+matrizBodega5[i][j] );
-                                                                                    }                       
-                                                                 System.out.println("");
-                                                                     }
-
-                                                                   }//if                                                    
-                                                    break;
-                                                case 6:
-                                                    
-                                                                  int contador6 = 1;
-                                                                  int asignado6 = 1;//da valor 1 a la casilla
-                                                                     if(num_producto>14){
-                                                            for(int i=0; i < 5; i++){               //llena de izquierda a derecha de fila en fila
-                                                            for(int j=0; j <20; j++){
-
-                                                                matrizBodega6[i][j]=asignado6;
-                                                                contador6++;
-                                                                      if(contador6> num_producto+1){ //si es mayor al numero de ingresos llena de ceros
-
-                                                                         matrizBodega6[i][j]=0;
-                                                                         contador6++;
-                                                                                                  }                                   
-                                                        System.out.print("   "+matrizBodega6[i][j] );
-                                                                                    }                       
-                                                                 System.out.println("");
-                                                                     }
-
-                                                                   }//if
-                                                                     
-                                                    break;
-                                                 case 7:
-                                                 default: System.out.println("Bodega inexistente");
-                                                    break;
-                                                    
-                                            }
-                             break;//case 1
-                        case 2:
-                            break;
-                    }
-                
-                
-                break;//case 1 principal
-                }///////////////////////////////////////////////////////////////
-            case 2:// MENU TRASLADOS DE BODEGA
-                System.out.println("1. Verificar posibles traslados");
-                System.out.println("2. Realizar traslado");
-                System.out.println("3. Regresar");
-                opcion = entrada.nextInt();
-                
-                    switch(opcion){
-                            case 1:
-                                break;
-                            case 2:
-                                break;
-                    }
-                
-                break;//case 2 principal
-            case 3:// MENU REBASTECIMIENTO
-                System.out.println("1. Rebastecer Aumatizado");
-                System.out.println("2. Rebastecer manual");
-                System.out.println("3. Regresar");
-                opcion = entrada.nextInt();
-                
-                     switch(opcion){
-                            case 1:
-                                break;
-                            case 2:
-                                break;               
-                     }
-                     
-                break;//case 3 principal
-            case 4:// MENU SALIDA DE PRODUCTOS
-                System.out.println("1. Realizar pedido");
-                System.out.println("2. Regresar");
-                opcion = entrada.nextInt();
-                
-                    switch(opcion){
-                            case 1:
-                                break;
-                            case 2:
-                                break;                
-                    }
-                    
-                break;//case 4 principal
-            case 5:// NENU KARDEX
-                break;//case 5 principal
-            case 6:// MENU REPORTES
-                break;//case 6 principal
-            case 7:// MENU MOSTRAR BODEGA
+                            
                 break;//case 7 principal
             case 8:// SALIR
                 System.out.println("Finalizado.");
             System.exit(0);
                 break;//case 8 principal 
+                
+                
         }//switch principal
+        
+        
         }catch(Exception E){
             
             System.out.println("Error, Porfavor Seleccione una opcion valida.: " + E.getMessage());
